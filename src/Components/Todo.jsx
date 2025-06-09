@@ -46,15 +46,15 @@ function Todo() {
   };
 
   return (
-    <div className='bg-white max-w-md flex flex-col p-7 min-h-[550px] rounded-xl shadow-md'>
+    <div className='bg-white max-w-md flex flex-col p-7 min-w-[370px] min-h-[550px] rounded-xl shadow-md'>
       <div className='flex bg-sky-400 p-2 rounded-xl items-center'>
         <img className='w-10 h-10' src={todo_icon} alt="Todo Icon" />
         <h1 className='font-semibold p-2 text-2xl text-white'>To Do List</h1>
       </div>
 
-      <div className="flex flex-col sm:flex-row p-0 my-4 bg-sky-100 rounded-full overflow-hidden">
+      <div className="flex p-0 my-4 bg-sky-100 rounded-full overflow-hidden">
         <input
-          className="bg-transparent flex-1 border-0 outline-none px-4 py-2 placeholder:text-slate-600 text-slate-700 w-full"
+          className="bg-transparent flex-1 border-0 outline-none px-4 py-2 placeholder:text-slate-600 text-slate-700"
           type="text"
           placeholder="Add your task"
           value={inputText}
@@ -62,7 +62,7 @@ function Todo() {
           onKeyDown={handleOnKeyDown}
         />
         <button
-          className="border-0 bg-indigo-500 hover:bg-indigo-600 px-4 py-2 text-white font-medium transition-colors whitespace-nowrap"
+          className="border-0 bg-indigo-500 hover:bg-indigo-600 px-4 text-white font-medium transition-colors"
           onClick={addTasks}
         >
           ADD

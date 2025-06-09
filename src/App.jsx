@@ -1,7 +1,7 @@
 import Todo from './Components/Todo'
 function App() {
   return (
-    <div className="flex items-center justify-center w-full min-w-[320px] px-4 mx-auto min-h-screen bg-gray-100">
+    <div className="flex items-center justify-center w-full min-w-[370px] mx-auto min-h-screen bg-gray-100">
       <Todo/>
     </div>
   )
