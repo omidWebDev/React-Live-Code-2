@@ -46,7 +46,7 @@ function Todo() {
   };
 
   return (
-    <div className='bg-white w-11/12 max-w-md flex flex-col p-7 min-h-[550px] rounded-xl shadow-md'>
+    <div className='bg-white max-w-md flex flex-col p-7 min-h-[550px] rounded-xl shadow-md'>
       <div className='flex bg-sky-400 p-2 rounded-xl items-center'>
         <img className='w-10 h-10' src={todo_icon} alt="Todo Icon" />
         <h1 className='font-semibold p-2 text-2xl text-white'>To Do List</h1>
