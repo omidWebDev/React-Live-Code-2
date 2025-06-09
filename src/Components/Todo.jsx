@@ -52,9 +52,9 @@ function Todo() {
         <h1 className='font-semibold p-2 text-2xl text-white'>To Do List</h1>
       </div>
 
-      <div className="flex p-0 my-4 bg-sky-100 rounded-full overflow-hidden">
+      <div className="flex flex-col sm:flex-row p-0 my-4 bg-sky-100 rounded-full overflow-hidden">
         <input
-          className="bg-transparent flex-1 border-0 outline-none px-4 py-2 placeholder:text-slate-600 text-slate-700"
+          className="bg-transparent flex-1 border-0 outline-none px-4 py-2 placeholder:text-slate-600 text-slate-700 w-full"
           type="text"
           placeholder="Add your task"
           value={inputText}
@@ -62,7 +62,7 @@ function Todo() {
           onKeyDown={handleOnKeyDown}
         />
         <button
-          className="border-0 bg-indigo-500 hover:bg-indigo-600 px-4 text-white font-medium transition-colors"
+          className="border-0 bg-indigo-500 hover:bg-indigo-600 px-4 py-2 text-white font-medium transition-colors whitespace-nowrap"
           onClick={addTasks}
         >
           ADD
